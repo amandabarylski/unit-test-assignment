@@ -7,7 +7,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
 		<!-- I changed the Java version to 21 as that is what my Eclipse uses by default.
-		When I tried using 17, I got a warning saying that there were no JREs installed that were compatible with version 17.-->
+		When I tried using 17, I got a warning saying that there were no JREs installed that were compatible with version 17.
+		I then also had to change the Mockito version to work with it as well, which I found on GitHub.
+		I'm still getting a warning, but from what I found it is harmless so I opted to ignore it.-->
 		<java.version>21</java.version>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
 	</properties>
@@ -32,7 +34,7 @@
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-junit-jupiter</artifactId>
-			<version>3.11.2</version>
+			<version>5.16.1</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
